@@ -16,4 +16,4 @@ spec:
       - name: easy-gate
         image: kubemaster/easy-gate:b0a2b1f
         ports:
-        - containerPort: 8080
+        - containerPort: 80
