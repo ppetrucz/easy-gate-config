@@ -17,7 +17,3 @@ spec:
         image: kubemaster/easy-gate:b0a2b1f
         ports:
         - containerPort: 8080
-      - name: nginx
-        image: nginx:latest
-        ports:
-        - containerPort: 80
