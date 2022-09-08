@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: easy-gate
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: easy-gate
