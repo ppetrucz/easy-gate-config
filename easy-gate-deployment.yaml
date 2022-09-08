@@ -1,0 +1,23 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: easy-gate
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: easy-gate
+  template:
+    metadata:
+      labels:
+        app: easy-gate
+    spec:
+      containers:
+      - name: easy-gate
+        image: kubemaster/easy-gate:b0a2b1f
+        ports:
+        - containerPort: 8080
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
